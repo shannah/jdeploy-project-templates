@@ -25,7 +25,7 @@ public class {{ mainClass }}Test
      */
     public static Test suite()
     {
-        return new TestSuite( {{ mainClass }}Test.class );
+        return new TestSuite( {{ mainClass }}Test.class);
     }
 
     /**

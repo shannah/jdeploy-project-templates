@@ -1,4 +1,4 @@
-package {{ packageName }}
+package {{ packageName }};
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
