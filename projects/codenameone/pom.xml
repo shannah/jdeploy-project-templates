@@ -89,7 +89,7 @@
         <kotlin.compiler.jvmTarget>1.8</kotlin.compiler.jvmTarget>
 
 
-        <cn1app.name>myapp</cn1app.name>
+        <cn1app.name>{{ artifactId }}</cn1app.name>
 
 
     </properties>
