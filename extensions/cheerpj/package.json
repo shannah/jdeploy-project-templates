@@ -1,0 +1,11 @@
+{
+  "jdeploy": {
+    "cheerpj": {
+      "githubPages": {
+        "enabled": true,
+        "path": "app",
+        "branch" : "gh-pages"
+      }
+    }
+  }
+}

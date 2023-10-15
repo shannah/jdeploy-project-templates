@@ -13,14 +13,7 @@
     "javaVersion": "{{ javaVersion }}",
     "jar": "target/{{ artifactId }}-1.0-SNAPSHOT.jar",
     "javafx": false,
-    "title": "{{ appTitle }}",
-    "cheerpj": {
-      "githubPages": {
-        "enabled": true,
-        "path": "app",
-        "branch" : "gh-pages"
-      }
-    }
+    "title": "{{ appTitle }}"
   },
   "dependencies": {
     "command-exists-promise": "^2.0.2",
