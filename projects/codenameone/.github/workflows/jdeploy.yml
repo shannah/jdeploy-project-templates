@@ -15,6 +15,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Install dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install xvfb
       - name: Set up Git
         run: |
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
@@ -24,10 +27,11 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '11'
-          distribution: 'temurin'
+          java-package: jdk+fx
+          distribution: zulu
           cache: maven
       - name: Build with Maven
-        run: bash build.sh jar
+        run: xvfb-run bash build.sh jar
       - name: Build App Installer Bundles
         uses: shannah/jdeploy@master
         with:
