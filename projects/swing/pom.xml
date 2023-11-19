@@ -13,7 +13,7 @@
     <java.version>{{ javaVersion }}</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
-    <jdeploy.maven.plugin.version>1.0.7</jdeploy.maven.plugin.version>
+    <jdeploy.maven.plugin.version>1.0.8</jdeploy.maven.plugin.version>
     <jdeploy.version>4.0.26</jdeploy.version>
   </properties>
   <dependencies>
