@@ -76,6 +76,19 @@
           </execution>
         </executions>
       </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.0.0</version>
+        <configuration>
+          <mainClass>{{ packageName }}.{{ mainClass }}</mainClass>
+          <arguments>
+            <argument>-Xdebug</argument>
+            <argument>-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005</argument>
+          </arguments>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 
