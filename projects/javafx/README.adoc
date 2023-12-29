@@ -1,5 +1,7 @@
 = jDeploy JavaFX Starter Template
 
+{{ releasesUrl }}[Releases]
+
 A project template for a JavaFX project that includes workflows to auto-deploy native app installers for every commit, and every release/tag.
 
 == Features
