@@ -81,7 +81,7 @@
           <id>executable-jar</id>
           <properties>
               <codename1.platform>javase</codename1.platform>
-              <exec.mainClass>com.example.myapp.MyAppStub</exec.mainClass>
+              <exec.mainClass>{{ packageName }}.{{ mainClassName }}</exec.mainClass>
           </properties>
           <dependencies>
               <dependency>
@@ -204,7 +204,7 @@
           <id>run-desktop</id>
           <properties>
               <codename1.platform>javase</codename1.platform>
-              <exec.mainClass>com.example.myapp.MyAppStub</exec.mainClass>
+              <exec.mainClass>{{ packageName }}.{{ mainClassName }}</exec.mainClass>
           </properties>
           <dependencies>
               <dependency>
