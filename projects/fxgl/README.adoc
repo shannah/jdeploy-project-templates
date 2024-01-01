@@ -1,19 +1,28 @@
-= FXGL using Maven/Gradle
+= FXGL using Maven
 
 This is an example of a basic Maven configuration for creating FXGL games on Java 17+ using Java and/or Kotlin.
 
-For actual game examples, please see [FXGLGames](https://github.com/AlmasB/FXGLGames).
+NOTE: This template was adapted from https://github.com/AlmasB/FXGL-MavenGradle[this project template].
 
-You may wish to update the FXGL version to [latest](https://github.com/AlmasB/FXGL#maven).
+For actual game examples, please see https://github.com/AlmasB/FXGLGames[FXGLGames].
 
-### Run via Maven
+You may wish to update the FXGL version to https://github.com/AlmasB/FXGL#maven[latest].
 
-```
+== Run via Maven
+
+[source,bash]
+----
 mvn javafx:run
-```
+----
 
-### Releases
+== Requirements
+
+This project uses FXGL 21, which requires Java 21.  
+
+If you want to change the version of Java, you can change it in the `package.json`, `pom.xml`, and `.github/workflows/jdeploy.yml` files.
+
+== Publishing Releases
 
 This project will generate releases (desktop installers) automatically on each git commit. See https://www.jdeploy.com/docs/intellij-plugin-tutorial[this tutorial for details].
 
-You can download releases at {{ releasesUrl }}
+You can download releases on the  {{ releasesUrl }}[repository releases page].
