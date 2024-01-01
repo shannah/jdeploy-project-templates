@@ -12,8 +12,9 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.main.class>{{ packageName }}.{{ mainClass }}</maven.compiler.main.class>
-        <fxgl.version>11.16</fxgl.version>
-        <kotlin.version>1.4.30</kotlin.version>
+        <fxgl.version>21</fxgl.version>
+        <kotlin.version>1.7.10</kotlin.version>
+        <javafx.plugin.version>0.0.8</javafx.plugin.version>
     </properties>
     <dependencies>
         <dependency>
