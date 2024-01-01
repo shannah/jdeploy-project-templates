@@ -10,7 +10,7 @@
   "version": "1.0.0",
   "jdeploy": {
     "jdk": false,
-    "javaVersion": "{{ javaVersion }}",
+    "javaVersion": "21",
     "jar": "target/{{ artifactId }}-1.0.0.jar",
     "javafx": true,
     "title": "{{ appTitle }}"

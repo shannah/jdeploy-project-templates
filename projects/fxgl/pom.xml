@@ -16,7 +16,7 @@
         <kotlin.version>1.7.10</kotlin.version>
         <javafx.plugin.version>0.0.3</javafx.plugin.version>
         <javafx.executable>${java.home}/bin/java</javafx.executable>
-        <java.version>{{ javaVersion }}</java.version>
+        <java.version>21</java.version>
     </properties>
     <profiles>
         <profile>

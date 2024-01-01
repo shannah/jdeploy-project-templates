@@ -4,3 +4,5 @@ jdeploy
 jdeploy-bundle
 jdeploy_bundle
 .idea
+./system
+./logs
