@@ -14,8 +14,27 @@
         <maven.compiler.main.class>{{ packageName }}.{{ mainClass }}</maven.compiler.main.class>
         <fxgl.version>21</fxgl.version>
         <kotlin.version>1.7.10</kotlin.version>
-        <javafx.plugin.version>0.0.8</javafx.plugin.version>
+        <javafx.plugin.version>0.0.3</javafx.plugin.version>
+        <javafx.executable>${java.home}/bin/java</javafx.executable>
+        <java.version>{{ javaVersion }}</java.version>
     </properties>
+    <profiles>
+        <profile>
+            <!-- Windows specific profile -->
+            <id>windows</id>
+            <activation>
+                <os>
+                    <family>Windows</family>
+                </os>
+            </activation>
+            <properties>
+                <!-- Override javafx.executable for Windows -->
+                <javafx.executable>${java.home}/bin/java.exe</javafx.executable>
+            </properties>
+        </profile>
+
+        <!-- Optionally, you can add more profiles for other specific OS configurations -->
+    </profiles>
     <dependencies>
         <dependency>
             <groupId>com.github.almasb</groupId>
