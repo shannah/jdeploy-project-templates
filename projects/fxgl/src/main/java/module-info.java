@@ -1,4 +1,4 @@
 open module {{ packageName }} {
-    requires com.almasb.fxfl.all;
+    requires com.almasb.fxgl.all;
     exports {{ packageName }};
 }
