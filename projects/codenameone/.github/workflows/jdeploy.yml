@@ -7,6 +7,8 @@ on:
   push:
     branches: ['*', '!gh-pages']
     tags: ['*']
+env:
+  CREATE_DMG: false
 
 jobs:
   build:
@@ -38,3 +40,43 @@ jobs:
         uses: shannah/jdeploy@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload Build Artifacts for DMG Action
+        if: ${{ vars.JDEPLOY_CREATE_DMG == 'true' }}  # Only needed if creating DMG
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-target
+          path: ./javase/target
+
+  create_and_upload_dmg:
+    # Enable DMG creation by setting JDEPLOY_CREATE_DMG variable on the repo.
+    # See https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables#creating-configuration-variables-for-an-environment
+    if: ${{ vars.JDEPLOY_CREATE_DMG == 'true' }}
+    name: Create and upload DMG
+    permissions:
+      contents: write
+    runs-on: macos-latest
+    needs: build
+    steps:
+      - name: Set up Git
+        run: |
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git config --global user.name "${{ github.actor }}"
+      - uses: actions/checkout@v3
+      - name: Download Build Artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build-target
+          path: ./javase/target
+      - name: List files in ./javase/target
+        run: ls -l ./javase/target
+      - name: Create DMG and Upload to Release
+        uses: shannah/jdeploy-action-dmg@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          developer_id: ${{ secrets.MAC_DEVELOPER_ID }}
+          developer_team_id: ${{ secrets.MAC_DEVELOPER_TEAM_ID }}
+          developer_certificate_name: ${{ secrets.MAC_DEVELOPER_CERTIFICATE_NAME }}
+          developer_certificate_p12_base64: ${{ secrets.MAC_DEVELOPER_CERTIFICATE_P12_BASE64 }}
+          developer_certificate_password: ${{ secrets.MAC_DEVELOPER_CERTIFICATE_PASSWORD }}
+          notarization_password: ${{ secrets.MAC_NOTARIZATION_PASSWORD }}
