@@ -39,6 +39,16 @@ Native bundles are generated using jDeploy a free, open source tool for deployin
 
 https://www.jdeploy.com[Learn more].
 
+=== DMG Releases
+
+By default Mac releases use an installer.  You can optionally enable DMG releases also by setting the variable `JDEPLOY_CREATE_DMG=true` in your repository settings.
+You will also need to define the following secrets:
+
+. `MAC_DEVELOPER_ID` : Your email address for your Apple developer account.
+. `MAC_DEVELOPER_CERTIFICATE_P12_BASE64` : A base64 encoding of your Mac developer certificate (p12)
+. `MAC_DEVELOPER_CERTIFICATE_PASSWORD` : The password you used for your Mac developer certificate p12, when you exported it from your keychain.
+. `MAC_NOTARIZATION_PASSWORD` : The application-specific password that you set for notarization in your Apple developer account.
+
 == Private Repositories
 
 This template will work out of the box for public repositories.  However, releases must be published to a public repository in order for your app to be able to access updates.  Therefore, if you are using a private repository, you'll need to make some small changes to the link:.github/workflows/jdeploy.yml[workflow file] to direct it to publish releases to a different repository.

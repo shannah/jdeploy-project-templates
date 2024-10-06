@@ -26,3 +26,13 @@ If you want to change the version of Java, you can change it in the `package.jso
 This project will generate releases (desktop installers) automatically on each git commit. See https://www.jdeploy.com/docs/intellij-plugin-tutorial[this tutorial for details].
 
 You can download releases on the  {{ releasesUrl }}[repository releases page].
+
+=== DMG Releases
+
+By default Mac releases use an installer.  You can optionally enable DMG releases also by setting the variable `JDEPLOY_CREATE_DMG=true` in your repository settings.
+You will also need to define the following secrets:
+
+. `MAC_DEVELOPER_ID` : Your email address for your Apple developer account.
+. `MAC_DEVELOPER_CERTIFICATE_P12_BASE64` : A base64 encoding of your Mac developer certificate (p12)
+. `MAC_DEVELOPER_CERTIFICATE_PASSWORD` : The password you used for your Mac developer certificate p12, when you exported it from your keychain.
+. `MAC_NOTARIZATION_PASSWORD` : The application-specific password that you set for notarization in your Apple developer account.

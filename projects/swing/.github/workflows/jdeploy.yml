@@ -64,8 +64,9 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           developer_id: ${{ secrets.MAC_DEVELOPER_ID }}
-          developer_team_id: ${{ secrets.MAC_DEVELOPER_TEAM_ID }}
-          developer_certificate_name: ${{ secrets.MAC_DEVELOPER_CERTIFICATE_NAME }}
+          # Team ID and cert name only needed if it can't extract from the certifcate for some reason
+          # developer_team_id: ${{ secrets.MAC_DEVELOPER_TEAM_ID }}
+          # developer_certificate_name: ${{ secrets.MAC_DEVELOPER_CERTIFICATE_NAME }}
           developer_certificate_p12_base64: ${{ secrets.MAC_DEVELOPER_CERTIFICATE_P12_BASE64 }}
           developer_certificate_password: ${{ secrets.MAC_DEVELOPER_CERTIFICATE_PASSWORD }}
           notarization_password: ${{ secrets.MAC_NOTARIZATION_PASSWORD }}
