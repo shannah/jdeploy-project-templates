@@ -3,7 +3,7 @@
     "{{ appName }}": "jdeploy-bundle/jdeploy.js"
   },
   "author": "",
-  "description": "jDeploy Swing Spring Boot Starter Project",
+  "description": "jDeploy Swing Quarkus Starter Project",
   "main": "index.js",
   "preferGlobal": true,
   "repository": "",
@@ -11,7 +11,7 @@
   "jdeploy": {
     "jdk": false,
     "javaVersion": "{{ javaVersion }}",
-    "jar": "target/{{ artifactId }}-1.0-SNAPSHOT.jar",
+    "jar": "target/{{ artifactId }}-1.0-SNAPSHOT-runner.jar",
     "javafx": false,
     "title": "{{ appTitle }}"
   },

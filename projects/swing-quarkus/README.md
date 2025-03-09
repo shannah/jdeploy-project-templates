@@ -8,7 +8,7 @@
 
 This project was generated using the Swing project template from [jDeploy](https://www.jdeploy.com), a tool to deploy Java desktop apps on Windows, Mac.
 
-This template uses SpringBoot to simplify the building.
+This template uses Quarkus to simplify the building.
 
 ## DMG Releases
 
