@@ -1,0 +1,10 @@
+= jDeploy Project Templates
+
+This repository stores the project templates that are available in https://www.jdeploy.com[jDeploy].
+
+== Adding a Project Template
+
+1. Fork this repo
+2. Copy an existing template inside the `projects` directory as a starting point for your template.
+3. Modify the template as desired.
+4. Make a pull request with your new template.
