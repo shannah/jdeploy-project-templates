@@ -13,4 +13,18 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.main.class>{{ packageName }}.{{ mainClass }}</maven.compiler.main.class>
     </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>ca.weblite</groupId>
+                <artifactId>jdeploy-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>jdeploy</id> <!-- Same ID as in parent -->
+                        <!-- No phase or goals: this effectively disables the execution -->
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
