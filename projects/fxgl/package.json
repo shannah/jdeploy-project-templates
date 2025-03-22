@@ -1,6 +1,6 @@
 {
   "bin": {
-    "{{ artifactId }}": "jdeploy-bundle/jdeploy.js"
+    "{{ appName }}": "jdeploy-bundle/jdeploy.js"
   },
   "author": "",
   "description": "Parent for JavaFX starter project",
@@ -11,7 +11,7 @@
   "jdeploy": {
     "jdk": false,
     "javaVersion": "21",
-    "jar": "target/{{ artifactId }}-1.0.0.jar",
+    "jar": "target/{{ artifactId }}-1.0-SNAPSHOT.jar",
     "javafx": true,
     "title": "{{ appTitle }}"
   },
@@ -20,7 +20,7 @@
     "shelljs": "^0.8.4"
   },
   "license": "ISC",
-  "name": "sample2",
+  "name": "{{ appName",
   "files": [
     "jdeploy-bundle"
   ],
