@@ -24,7 +24,7 @@
     "shelljs": "^0.8.4"
   },
   "license": "ISC",
-  "name": "{{ appName",
+  "name": "{{ appName }}",
   "files": [
     "jdeploy-bundle"
   ],
