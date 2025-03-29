@@ -13,7 +13,7 @@ import java.util.Objects;
 import java.util.ResourceBundle;
 
 
-public class App extends Application {
+public class {{ mainClass }} extends Application {
 
 
     public static void main(String[] args) {
