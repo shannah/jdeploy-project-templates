@@ -44,7 +44,7 @@ public class {{ mainClass }} extends Application {
 
     public static void updateAppWindowTitle(Stage stage) {
         ResourceBundle resourceBundle =
-                ResourceBundle.getBundle("App", LocaleService.getLocale());
+                ResourceBundle.getBundle("{{ mainClass }}", LocaleService.getLocale());
         stage.setTitle(resourceBundle.getString("name"));
     }
 
