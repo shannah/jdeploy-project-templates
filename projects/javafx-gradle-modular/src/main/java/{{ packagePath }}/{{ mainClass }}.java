@@ -27,7 +27,7 @@ public class {{ mainClass }} extends Application {
             UserSettingsService.initTheme();
 
             updateAppWindowTitle(stage);
-            stage.getIcons().add(new Image(Objects.requireNonNull(App.class.getResourceAsStream("icon-64.png"))));
+            stage.getIcons().add(new Image(Objects.requireNonNull({{ mainClass }}.class.getResourceAsStream("icon-64.png"))));
             stage.setMinHeight(300);
             stage.setMinWidth(400);
             stage.initStyle(StageStyle.DECORATED);
