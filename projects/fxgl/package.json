@@ -13,7 +13,11 @@
     "javaVersion": "21",
     "jar": "target/{{ artifactId }}-1.0-SNAPSHOT.jar",
     "javafx": true,
-    "title": "{{ appTitle }}"
+    "title": "{{ appTitle }}",
+    "buildCommand": [
+      "./mvnw",
+      "package"
+    ]
   },
   "dependencies": {
     "njre": "^0.2.0",
