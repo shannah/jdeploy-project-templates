@@ -54,3 +54,6 @@ Thumbs.db
 *.project
 *.settings/
 *.tmproj
+
+!gradle-wrapper.jar
+!maven-wrapper.jar
