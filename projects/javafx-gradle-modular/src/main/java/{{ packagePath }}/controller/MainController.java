@@ -8,7 +8,7 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import {{ packageName }}.App;
+import {{ packageName }}.{{ mainClass }};
 import {{ packageName }}.services.LocaleService;
 import {{ packageName }}.services.UserSettingsService;
 import org.tinylog.Logger;
@@ -30,7 +30,7 @@ public class MainController implements Initializable {
     public static void load(Stage stage) {
         try {
             ResourceBundle resourceBundle =
-                    ResourceBundle.getBundle("App", LocaleService.getLocale());
+                    ResourceBundle.getBundle("{{ mainClass }}", LocaleService.getLocale());
             FXMLLoader fxmlLoader = new FXMLLoader(
                     MainController.class.getResource("main.fxml"),
                     resourceBundle);
@@ -56,7 +56,7 @@ public class MainController implements Initializable {
         localChoiceBox.valueProperty().addListener((e,o,n)-> {
             LocaleService.setLocale(n);
             load(stage);
-            App.updateAppWindowTitle(stage);
+            {{ mainClass }}.updateAppWindowTitle(stage);
         });
     }
 
