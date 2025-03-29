@@ -1,0 +1,130 @@
+# Note: This workflow is disabled by default in favour of using jDeploy for releases
+# You can enable it by setting the ENABLE_JPACKAGE_WORKFLOW variable to true in the repository settings.
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  buildExeForWindows:
+    if: vars.ENABLE_JPACKAGE_WORKFLOW == 'true'
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+      - name: Build EXE
+        run: ./gradlew buildExeForWindows
+      - name: Compile .ISS to .EXE Installer
+        uses: Minionguyjpro/Inno-Setup-Action@v1.2.5
+        with:
+          path: installScript.iss
+      - name: Upload Installer artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: {{ appName }}-installer
+          path: build/innosetup/*.exe
+
+  buildMsiForWindows:
+    if: vars.ENABLE_JPACKAGE_WORKFLOW == 'true'
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+      - name: Build MSI
+        run: ./gradlew buildMsiForWindows
+      - name: Upload MSI artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: {{ appName }}-msi-windows
+          path: build/jpackage/*.msi
+
+  buildDebForLinux:
+    if: vars.ENABLE_JPACKAGE_WORKFLOW == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+      - name: Build DEB
+        run: ./gradlew buildDebForLinux
+      - name: Upload DEB artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: {{ appName }}-deb-linux
+          path: build/jpackage/*.deb
+
+  buildRpmForLinux:
+    if: vars.ENABLE_JPACKAGE_WORKFLOW == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+      - name: Build RPM
+        run: ./gradlew buildRpmForLinux
+      - name: Upload RPM artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: {{ appName }}-rpm-linux
+          path: build/jpackage/*.rpm
+
+  buildDmgForMacOS:
+    if: vars.ENABLE_JPACKAGE_WORKFLOW == 'true'
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+      - name: Build DMG
+        run: ./gradlew buildDmgForMacOS
+      - name: Upload DMG artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: {{ appName }}-dmg-macos
+          path: build/jpackage/*.dmg
+
+  release:
+    if: vars.ENABLE_JPACKAGE_WORKFLOW == 'true'
+    needs: [buildExeForWindows, buildMsiForWindows, buildDebForLinux, buildRpmForLinux, buildDmgForMacOS]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: artifacts/**/*
+          tag_name: ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }}
+          body: "Automated release for ${{ github.ref_name }}"
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
