@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectTemplates xmlns="http://jdeploy.com/project-templates"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://jdeploy.com/project-templates https://raw.githubusercontent.com/shannah/jdeploy-project-templates/master/schema/v1/project-templates.xsd">
+
+    <template>
+        <displayName>Swing Java Maven Starter</displayName>
+        <name>swing</name>
+        <uiToolkit>Swing</uiToolkit>
+        <categories>
+            <category>Starter</category>
+            <category>Desktop</category>
+            <category>Web</category>
+        </categories>
+        <screenshots>
+            <screenshot url="https://github.com/user-attachments/assets/81d2bfa5-1ad9-4f9b-92dc-d87416b77042"/>
+            <screenshot url="https://github.com/user-attachments/assets/ac987251-0692-4ac8-a443-9d28a8ba2d3f"/>
+        </screenshots>
+        <screencasts>
+            <screencast url="https://www.youtube.com/embed/-FbQMtdA1mA"/>
+        </screencasts>
+        <iconUrl>http://example.com/icon.png</iconUrl>
+        <demoDownloadUrl>https://www.jdeploy.com/~jdeploy-template-swing</demoDownloadUrl>
+        <webAppUrl>https://shannah.github.io/jdeploy-template-swing-web/</webAppUrl>
+        <author>Steve Hannah</author>
+        <license>MIT</license>
+        <credits>Contributors listed at http://example.com/credits</credits>
+        <description>A bare-bones Swing app using Maven</description>
+        <buildTool>maven</buildTool>
+        <programmingLanguage>Java</programmingLanguage>
+    </template>
+
+    <template>
+        <displayName>Swing Boot Starter</displayName>
+        <name>swing-spring-boot</name>
+        <uiToolkit>Swing</uiToolkit>
+        <categories>
+            <category>Starter</category>
+            <category>Desktop</category>
+        </categories>
+        <screenshots>
+            <screenshot url="http://example.com/screenshot1.png"/>
+            <screenshot url="http://example.com/screenshot2.png"/>
+        </screenshots>
+        <screencasts>
+            <screencast url="http://example.com/demo.mp4"/>
+        </screencasts>
+        <iconUrl>http://example.com/icon.png</iconUrl>
+        <demoDownloadUrl>http://example.com/demo.zip</demoDownloadUrl>
+        <webAppUrl>http://example.com/demo</webAppUrl>
+        <author>Steve Hannah</author>
+        <license>MIT</license>
+        <credits>Contributors listed at http://example.com/credits</credits>
+        <description>A bare-bones Swing app using Spring Boot's maven packaging</description>
+        <buildTool>maven</buildTool>
+        <programmingLanguage>Java</programmingLanguage>
+    </template>
+
+    <template>
+        <displayName>JavaFX Maven Starter</displayName>
+        <name>javafx</name>
+        <uiToolkit>JavaFX</uiToolkit>
+        <categories>
+            <category>Starter</category>
+            <category>Desktop</category>
+        </categories>
+        <screenshots>
+            <screenshot url="http://example.com/screenshot1.png"/>
+            <screenshot url="http://example.com/screenshot2.png"/>
+        </screenshots>
+        <screencasts>
+            <screencast url="http://example.com/demo.mp4"/>
+        </screencasts>
+        <iconUrl>http://example.com/icon.png</iconUrl>
+        <demoDownloadUrl>http://example.com/demo.zip</demoDownloadUrl>
+        <webAppUrl>http://example.com/demo</webAppUrl>
+        <author>Steve Hannah</author>
+        <license>MIT</license>
+        <credits>Contributors listed at http://example.com/credits</credits>
+        <description>A bare-bones JavaFX app using the JavaFX maven plugin</description>
+        <buildTool>maven</buildTool>
+        <programmingLanguage>Java</programmingLanguage>
+    </template>
+
+    <template>
+        <displayName>JavaFX Gradle Modular Starter</displayName>
+        <name>javafx-gradle-modular</name>
+        <uiToolkit>JavaFX</uiToolkit>
+        <categories>
+            <category>Starter</category>
+            <category>Modular</category>
+            <category>Desktop</category>
+        </categories>
+        <screenshots>
+            <screenshot url="http://example.com/screenshot1.png"/>
+            <screenshot url="http://example.com/screenshot2.png"/>
+        </screenshots>
+        <screencasts>
+            <screencast url="http://example.com/demo.mp4"/>
+        </screencasts>
+        <iconUrl>http://example.com/icon.png</iconUrl>
+        <demoDownloadUrl>http://example.com/demo.zip</demoDownloadUrl>
+        <webAppUrl>http://example.com/demo</webAppUrl>
+        <author>Steve Hannah</author>
+        <license>MIT</license>
+        <credits>This template was adapted from easyJavaFXSetup, the fantastic JavaFX starter project created by Julien Troudet.</credits>
+        <description>Provides a basic JavaFX modular application, using gradle for builds</description>
+        <buildTool>gradle</buildTool>
+        <programmingLanguage>Java</programmingLanguage>
+    </template>
+
+    <template>
+        <displayName>Codename One Starter</displayName>
+        <name>codenameone</name>
+        <uiToolkit>Codename One</uiToolkit>
+        <categories>
+            <category>Starter</category>
+            <category>Mobile</category>
+            <category>Desktop</category>
+        </categories>
+        <screenshots>
+            <screenshot url="http://example.com/screenshot1.png"/>
+            <screenshot url="http://example.com/screenshot2.png"/>
+        </screenshots>
+        <screencasts>
+            <screencast url="http://example.com/demo.mp4"/>
+        </screencasts>
+        <iconUrl>http://example.com/icon.png</iconUrl>
+        <demoDownloadUrl>http://example.com/demo.zip</demoDownloadUrl>
+        <webAppUrl>http://example.com/demo</webAppUrl>
+        <author>Steve Hannah</author>
+        <license>MIT</license>
+        <credits>https://www.codenameone.com</credits>
+        <description>A bare-bones hybrid mobile/desktop application using Codename One</description>
+        <buildTool>maven</buildTool>
+        <programmingLanguage>Java</programmingLanguage>
+    </template>
+
+    <template>
+        <displayName>FXGL Game Starter</displayName>
+        <name>fxgl</name>
+        <uiToolkit>JavaFX</uiToolkit>
+        <categories>
+            <category>Starter</category>
+            <category>Desktop</category>
+            <category>Game</category>
+        </categories>
+        <screenshots>
+            <screenshot url="http://example.com/screenshot1.png"/>
+            <screenshot url="http://example.com/screenshot2.png"/>
+        </screenshots>
+        <screencasts>
+            <screencast url="http://example.com/demo.mp4"/>
+        </screencasts>
+        <iconUrl>http://example.com/icon.png</iconUrl>
+        <demoDownloadUrl>http://example.com/demo.zip</demoDownloadUrl>
+        <webAppUrl>http://example.com/demo</webAppUrl>
+        <author>Steve Hannah</author>
+        <license>MIT</license>
+        <credits>This template was adapted from https://github.com/AlmasB/FXGL-MavenGradle</credits>
+        <description>A simple game written using FXGL, a framework for building games with JavaFX</description>
+        <buildTool>maven</buildTool>
+        <programmingLanguage>Java</programmingLanguage>
+    </template>
+
+</projectTemplates>

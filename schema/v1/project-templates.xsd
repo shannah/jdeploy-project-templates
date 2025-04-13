@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://jdeploy.com/project-templates"
+           xmlns="http://jdeploy.com/project-templates"
+           elementFormDefault="qualified">
+    <xs:annotation>
+        <xs:documentation>
+            jDeploy Project Templates Schema v1
+            Source: https://raw.githubusercontent.com/shannah/jdeploy-project-templates/master/schema/v1/project-templates.xsd
+        </xs:documentation>
+    </xs:annotation>
+    <xs:element name="projectTemplates">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="template" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="displayName" type="xs:string"/>
+                            <xs:element name="name" type="xs:string"/>
+                            <xs:element name="uiToolkit" type="xs:string"/>
+                            <xs:element name="categories" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="category" type="xs:string" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="screenshots" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="screenshot" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="url" type="xs:anyURI" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="screencasts" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="screencast" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="url" type="xs:anyURI" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="tileImageUrl" type="xs:anyURI" minOccurs="0"/>
+                            <xs:element name="iconUrl" type="xs:anyURI" minOccurs="0"/>
+                            <xs:element name="demoDownloadUrl" type="xs:anyURI"/>
+                            <xs:element name="webAppUrl" type="xs:anyURI" minOccurs="0"/>
+                            <xs:element name="author" type="xs:string"/>
+                            <xs:element name="license" type="xs:string"/>
+                            <xs:element name="credits" type="xs:string"/>
+                            <xs:element name="description" type="xs:string"/>
+                            <xs:element name="buildTool" type="xs:string"/>
+                            <xs:element name="programmingLanguage" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
