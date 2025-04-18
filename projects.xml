@@ -19,6 +19,7 @@
         <screencasts>
             <screencast url="https://www.youtube.com/embed/-FbQMtdA1mA"/>
         </screencasts>
+        <tileImageUrl>https://github.com/user-attachments/assets/7ae1a374-8b82-4a3c-b597-21ac0f3a16d4</tileImageUrl>
         <iconUrl>http://example.com/icon.png</iconUrl>
         <demoDownloadUrl>https://www.jdeploy.com/~jdeploy-template-swing</demoDownloadUrl>
         <webAppUrl>https://shannah.github.io/jdeploy-template-swing-web/</webAppUrl>
