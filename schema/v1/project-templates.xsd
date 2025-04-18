@@ -57,6 +57,7 @@
                             <xs:element name="description" type="xs:string"/>
                             <xs:element name="buildTool" type="xs:string"/>
                             <xs:element name="programmingLanguage" type="xs:string"/>
+                            <xs:element name="sourceUrl" type="xs:anyURI" minOccurs="0"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
