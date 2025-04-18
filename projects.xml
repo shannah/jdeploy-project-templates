@@ -125,6 +125,7 @@
         <screencasts>
             <screencast url="http://example.com/demo.mp4"/>
         </screencasts>
+        <tileImageUrl>https://github.com/user-attachments/assets/cb23e286-cc81-4d6f-be37-62fb0175a870</tileImageUrl>
         <iconUrl>http://example.com/icon.png</iconUrl>
         <demoDownloadUrl>http://example.com/demo.zip</demoDownloadUrl>
         <webAppUrl>http://example.com/demo</webAppUrl>
