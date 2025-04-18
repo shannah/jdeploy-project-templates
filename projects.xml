@@ -29,6 +29,7 @@
         <description>A bare-bones Swing app using Maven</description>
         <buildTool>maven</buildTool>
         <programmingLanguage>Java</programmingLanguage>
+        <sourceUrl>https://github.com/shannah/jdeploy-template-swing</sourceUrl>
     </template>
 
     <template>
