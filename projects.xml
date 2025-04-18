@@ -49,7 +49,6 @@
         </screencasts>
         <tileImageUrl>https://github.com/user-attachments/assets/466c39d0-eb31-468d-bc6d-1bd3e28a9de5</tileImageUrl>
         <iconUrl>http://example.com/icon.png</iconUrl>
-        <webAppUrl>http://example.com/demo</webAppUrl>
         <author>Steve Hannah</author>
         <license>MIT</license>
         <credits>Contributors listed at http://example.com/credits</credits>
@@ -74,7 +73,6 @@
             <screencast url="http://example.com/demo.mp4"/>
         </screencasts>
         <iconUrl>http://example.com/icon.png</iconUrl>
-        <webAppUrl>http://example.com/demo</webAppUrl>
         <author>Steve Hannah</author>
         <license>MIT</license>
         <credits>Contributors listed at http://example.com/credits</credits>
@@ -101,7 +99,6 @@
         </screencasts>
         <tileImageUrl>https://github.com/user-attachments/assets/56d52e93-bfa9-450d-9577-a5e556efdf61</tileImageUrl>
         <iconUrl>http://example.com/icon.png</iconUrl>
-        <webAppUrl>http://example.com/demo</webAppUrl>
         <author>Steve Hannah</author>
         <license>MIT</license>
         <credits>This template was adapted from easyJavaFXSetup, the fantastic JavaFX starter project created by Julien Troudet.</credits>
@@ -128,8 +125,6 @@
         </screencasts>
         <tileImageUrl>https://github.com/user-attachments/assets/cb23e286-cc81-4d6f-be37-62fb0175a870</tileImageUrl>
         <iconUrl>http://example.com/icon.png</iconUrl>
-        <demoDownloadUrl>http://example.com/demo.zip</demoDownloadUrl>
-        <webAppUrl>http://example.com/demo</webAppUrl>
         <author>Steve Hannah</author>
         <license>MIT</license>
         <credits>https://www.codenameone.com</credits>
@@ -156,7 +151,6 @@
         </screencasts>
         <tileImageUrl>https://github.com/user-attachments/assets/6ceba112-f3ba-4036-bc22-511590daa03a</tileImageUrl>
         <iconUrl>http://example.com/icon.png</iconUrl>
-        <webAppUrl>http://example.com/demo</webAppUrl>
         <author>Steve Hannah</author>
         <license>MIT</license>
         <credits>This template was adapted from https://github.com/AlmasB/FXGL-MavenGradle</credits>
