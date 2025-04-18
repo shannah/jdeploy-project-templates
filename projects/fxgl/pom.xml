@@ -17,6 +17,7 @@
         <javafx.plugin.version>0.0.3</javafx.plugin.version>
         <javafx.executable>${java.home}/bin/java</javafx.executable>
         <java.version>21</java.version>
+        <javafx.version>21</javafx.version>
     </properties>
     <profiles>
         <profile>
