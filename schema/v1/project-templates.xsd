@@ -49,7 +49,7 @@
                             </xs:element>
                             <xs:element name="tileImageUrl" type="xs:anyURI" minOccurs="0"/>
                             <xs:element name="iconUrl" type="xs:anyURI" minOccurs="0"/>
-                            <xs:element name="demoDownloadUrl" type="xs:anyURI"/>
+                            <xs:element name="demoDownloadUrl" type="xs:anyURI" minOccurs="0"/>
                             <xs:element name="webAppUrl" type="xs:anyURI" minOccurs="0"/>
                             <xs:element name="author" type="xs:string"/>
                             <xs:element name="license" type="xs:string"/>
