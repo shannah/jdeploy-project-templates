@@ -46,6 +46,7 @@
         <screencasts>
             <screencast url="http://example.com/demo.mp4"/>
         </screencasts>
+        <tileImageUrl>https://github.com/user-attachments/assets/466c39d0-eb31-468d-bc6d-1bd3e28a9de5</tileImageUrl>
         <iconUrl>http://example.com/icon.png</iconUrl>
         <demoDownloadUrl>http://example.com/demo.zip</demoDownloadUrl>
         <webAppUrl>http://example.com/demo</webAppUrl>
