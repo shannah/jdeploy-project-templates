@@ -127,12 +127,14 @@
         </screencasts>
         <tileImageUrl>https://github.com/user-attachments/assets/cb23e286-cc81-4d6f-be37-62fb0175a870</tileImageUrl>
         <iconUrl>http://example.com/icon.png</iconUrl>
+        <demoDownloadUrl>https://www.jdeploy.com/~jdeploy-template-codenameone</demoDownloadUrl>
         <author>Steve Hannah</author>
         <license>MIT</license>
         <credits>https://www.codenameone.com</credits>
         <description>A bare-bones hybrid mobile/desktop application using Codename One</description>
         <buildTool>maven</buildTool>
         <programmingLanguage>Java</programmingLanguage>
+        <sourceUrl>https://github.com/shannah/jdeploy-template-codenameone</sourceUrl>
     </template>
 
     <template>
