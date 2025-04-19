@@ -49,12 +49,14 @@
         </screencasts>
         <tileImageUrl>https://github.com/user-attachments/assets/466c39d0-eb31-468d-bc6d-1bd3e28a9de5</tileImageUrl>
         <iconUrl>http://example.com/icon.png</iconUrl>
+        <demoDownloadUrl>https://www.jdeploy.com/~jdeploy-template-swing-boot</demoDownloadUrl>
         <author>Steve Hannah</author>
         <license>MIT</license>
         <credits>Contributors listed at http://example.com/credits</credits>
         <description>A bare-bones Swing app using Spring Boot's maven packaging</description>
         <buildTool>maven</buildTool>
         <programmingLanguage>Java</programmingLanguage>
+        <sourceUrl>https://github.com/shannah/jdeploy-template-swing-boot</sourceUrl>
     </template>
 
     <template>
