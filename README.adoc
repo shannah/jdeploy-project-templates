@@ -7,4 +7,5 @@ This repository stores the project templates that are available in https://www.j
 1. Fork this repo
 2. Copy an existing template inside the `projects` directory as a starting point for your template.
 3. Modify the template as desired.
-4. Make a pull request with your new template.
+4. Add `<template>` entry to the link:projects.xml[] file in the root of the repository.  This file contains a list of all available templates.
+5. Make a pull request with your new changes.
