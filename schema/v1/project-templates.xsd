@@ -14,7 +14,7 @@
             <xs:sequence>
                 <xs:element name="template" maxOccurs="unbounded">
                     <xs:complexType>
-                        <xs:sequence>
+                        <xs:all>
                             <xs:element name="displayName" type="xs:string"/>
                             <xs:element name="name" type="xs:string"/>
                             <xs:element name="uiToolkit" type="xs:string"/>
@@ -58,7 +58,7 @@
                             <xs:element name="buildTool" type="xs:string"/>
                             <xs:element name="programmingLanguage" type="xs:string"/>
                             <xs:element name="sourceUrl" type="xs:anyURI" minOccurs="0"/>
-                        </xs:sequence>
+                        </xs:all>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
