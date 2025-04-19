@@ -2,7 +2,7 @@
 
 ## About this Project
 
-This project was generated using the Swing project template from [jDeploy](https://www.jdeploy.com), a tool to deploy Java desktop apps on Windows, Mac.
+This project was generated using the Swing project template from [jDeploy](https://www.jdeploy.com), a tool to deploy Java desktop apps on Windows, Mac, and Linux.
 
 To create your own application based on this template, open jDeploy, select "Create New Project", select the "Swing Java Maven Starter" template, and complete the wizard.
 

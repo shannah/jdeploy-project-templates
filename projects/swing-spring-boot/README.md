@@ -1,21 +1,37 @@
-# {{ appTitle }}
-
-{{ appDescription }}
-
-[Releases]({{ releasesUrl }})
+# jDeploy Template Swing (Swing Boot Variant)
 
 ## About this Project
 
-This project was generated using the Swing project template from [jDeploy](https://www.jdeploy.com), a tool to deploy Java desktop apps on Windows, Mac.
+This project was generated using the "Swing Boot Starter" project template from [jDeploy](https://www.jdeploy.com), a tool to deploy Java desktop apps on Windows, Mac, and Linux.
 
-This template uses SpringBoot to simplify the building.
+To create your own application based on this template, open jDeploy, select "Create New Project", select the "Swing Boot Starter" template, and complete the wizard.
 
-## DMG Releases
+![Image](https://github.com/user-attachments/assets/eb4854db-facb-41c7-8491-d6a15466007a)
 
-By default Mac releases use an installer.  You can optionally enable DMG releases also by setting the variable `JDEPLOY_CREATE_DMG=true` in your repository settings.
-You will also need to define the following secrets:
+NOTE: This project is identical to the [Swing Java Maven Starter) template, except that this uses the Spring Boot Starter parent project to help with building the project.  This will build as an uber jar instead of bundling the dependencies in a lib directory.  This doesn't add any Spring dependencies to the app itself.  Spring is only used for the building of the app.
 
-* `MAC_DEVELOPER_ID` : Your email address for your Apple developer account.
-* `MAC_DEVELOPER_CERTIFICATE_P12_BASE64` : A base64 encoding of your Mac developer certificate (p12)
-*  `MAC_DEVELOPER_CERTIFICATE_PASSWORD` : The password you used for your Mac developer certificate p12, when you exported it from your keychain.
-* `MAC_NOTARIZATION_PASSWORD` : The application-specific password that you set for notarization in your Apple developer account.
+## Requirements
+
+* Java 21
+
+## Run
+```
+./mvnw spring-boot:run
+```
+
+## Build
+
+```
+./mvnw package
+```
+
+### Deploy
+
+**Short Version:**
+Open project in [jDeploy](https://www.jdeploy.com), and press "Publish"
+
+[Long version](https://www.jdeploy.com/docs/manual/#_publishing_your_application)
+
+### Advanced Deployment
+
+See [jDeploy Manual](https://www.jdeploy.com/docs/manual/)
