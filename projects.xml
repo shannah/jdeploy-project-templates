@@ -153,12 +153,14 @@
         </screencasts>
         <tileImageUrl>https://github.com/user-attachments/assets/6ceba112-f3ba-4036-bc22-511590daa03a</tileImageUrl>
         <iconUrl>http://example.com/icon.png</iconUrl>
+        <demoDownloadUrl>https://www.jdeploy.com/~jdeploy-template-fxgl</demoDownloadUrl>
         <author>Steve Hannah</author>
         <license>MIT</license>
         <credits>This template was adapted from https://github.com/AlmasB/FXGL-MavenGradle</credits>
         <description>A simple game written using FXGL, a framework for building games with JavaFX</description>
         <buildTool>maven</buildTool>
         <programmingLanguage>Java</programmingLanguage>
+        <sourceUrl>https://github.com/shannah/jdeploy-template-fxgl</sourceUrl>
     </template>
 
 </projectTemplates>
