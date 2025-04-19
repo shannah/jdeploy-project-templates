@@ -74,6 +74,7 @@
         <screencasts>
             <screencast url="http://example.com/demo.mp4"/>
         </screencasts>
+        <tileImageUrl>https://github.com/user-attachments/assets/515d6072-d374-4fb3-8ec5-b3918f34d99a</tileImageUrl>
         <iconUrl>http://example.com/icon.png</iconUrl>
         <demoDownloadUrl>https://www.jdeploy.com/~jdeploy-template-javafx</demoDownloadUrl>
         <author>Steve Hannah</author>
