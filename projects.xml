@@ -75,12 +75,14 @@
             <screencast url="http://example.com/demo.mp4"/>
         </screencasts>
         <iconUrl>http://example.com/icon.png</iconUrl>
+        <demoDownloadUrl>https://www.jdeploy.com/~jdeploy-template-javafx</demoDownloadUrl>
         <author>Steve Hannah</author>
         <license>MIT</license>
         <credits>Contributors listed at http://example.com/credits</credits>
         <description>A bare-bones JavaFX app using the JavaFX maven plugin</description>
         <buildTool>maven</buildTool>
         <programmingLanguage>Java</programmingLanguage>
+        <sourceUrl>https://github.com/shannah/jdeploy-template-javafx</sourceUrl>
     </template>
 
     <template>
