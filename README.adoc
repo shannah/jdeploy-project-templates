@@ -15,6 +15,33 @@ This repository stores the project templates that are available in https://www.j
 jDeploy clones this repository into `~/.jdeploy/templates`, and works with all files locally.
 If you checkout your fork of this repository into `~/.jdeploy/templates`, you can test your changes locally.
 
+== Placeholders
+
+The following placeholders are available in the template files:
+
+Here is the table of placeholders and their descriptions in AsciiDoc format:
+
+
+[cols="1,2", options="header"]
+|===
+| Placeholder                | Description
+
+| `{{ appName }}`            | Replaced with the project name.
+| `{{ appTitle }}`           | Replaced with the application title.
+| `{{ groupId }}`            | Replaced with the Maven group ID.
+| `{{ artifactId }}`         | Replaced with the Maven artifact ID.
+| `{{ mainClass }}`          | Replaced with the fully qualified name of the main class.
+| `{{ mainClassName }}`      | Replaced with the simple name of the main class.
+| `{{ packageName }}`        | Replaced with the base package name.
+| `{{ packagePath }}`        | Replaced with the base package name as a file path (dots replaced by `/`).
+| `{{ javaVersion }}`        | Replaced with the Java version being used.
+| `{{ githubRepository }}`   | Replaced with the GitHub repository URL.
+| `{{ githubReleasesRepository }}` | Replaced with the GitHub releases repository URL.
+| `{{ releasesUrl }}`        | Replaced with the URL for the releases.
+|===
+
+TIP: You can use placeholders in file names also.  This is particularly useful for `{{ packagePath }}` so that you can generate your source files in the correct package structure.
+
 == Help and Support
 
 Post questions into the jdeploy discussion forum at https://github.com/shannah/jdeploy/discussions
