@@ -9,3 +9,12 @@ This repository stores the project templates that are available in https://www.j
 3. Modify the template as desired.
 4. Add `<template>` entry to the link:projects.xml[] file in the root of the repository.  This file contains a list of all available templates.
 5. Make a pull request with your new changes.
+
+== Testing Your Template
+
+jDeploy clones this repository into `~/.jdeploy/templates`, and works with all files locally.
+If you checkout your fork of this repository into `~/.jdeploy/templates`, you can test your changes locally.
+
+== Help and Support
+
+Post questions into the jdeploy discussion forum at https://github.com/shannah/jdeploy/discussions
