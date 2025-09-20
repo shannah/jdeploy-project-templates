@@ -179,23 +179,21 @@
             <category>Desktop</category>
         </categories>
         <screenshots>
-            <screenshot url="https://github.com/user-attachments/assets/81d2bfa5-1ad9-4f9b-92dc-d87416b77042"/>
-            <screenshot url="https://github.com/user-attachments/assets/ac987251-0692-4ac8-a443-9d28a8ba2d3f"/>
+            <screenshot url="https://github.com/user-attachments/assets/97153f2e-5f9c-49d9-8cb8-ef9349eae613"/>
         </screenshots>
         <screencasts>
             <screencast url="https://www.youtube.com/embed/-FbQMtdA1mA"/>
         </screencasts>
         <tileImageUrl>https://github.com/user-attachments/assets/cd699960-ba23-48fe-9099-bce6adea389b</tileImageUrl>
         <iconUrl>http://example.com/icon.png</iconUrl>
-        <demoDownloadUrl>https://www.jdeploy.com/~jdeploy-template-swing</demoDownloadUrl>
-        <webAppUrl>https://shannah.github.io/jdeploy-template-swing-web/</webAppUrl>
+        <demoDownloadUrl>https://github.com/shannah/jdeploy-kmp-starter/releases/tag/v1.0.0</demoDownloadUrl>
         <author>Steve Hannah</author>
         <license>MIT</license>
         <credits>Contributors listed at http://example.com/credits</credits>
         <description>Kotlin Multi-platform starter project</description>
         <buildTool>gradle</buildTool>
         <programmingLanguage>Kotlin</programmingLanguage>
-        <sourceUrl>https://github.com/shannah/jdeploy-template-swing</sourceUrl>
+        <sourceUrl>https://github.com/shannah/jdeploy-kmp-starter</sourceUrl>
     </template>
 
 </projectTemplates>
