@@ -30,6 +30,7 @@ Here is the table of placeholders and their descriptions in AsciiDoc format:
 | `{{ appTitle }}`           | Replaced with the application title.
 | `{{ groupId }}`            | Replaced with the Maven group ID.
 | `{{ artifactId }}`         | Replaced with the Maven artifact ID.
+| `{{ artifactId_snake }}`         | Replaced with the Maven artifact ID, converted to snake case.
 | `{{ mainClass }}`          | Replaced with the fully qualified name of the main class.
 | `{{ mainClassName }}`      | Replaced with the simple name of the main class.
 | `{{ packageName }}`        | Replaced with the base package name.
