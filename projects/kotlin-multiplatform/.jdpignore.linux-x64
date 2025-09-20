@@ -4,16 +4,16 @@
 
 # Skiko (Compose Multiplatform) native libraries
 !/libskiko-linux-x64.so
-skiko-windows-*.dll
-libskiko-macos-*.dylib
-libskiko-linux-*.so
-skiko-*.dll
-libskiko-*.dylib
-libskiko-*.so
+/skiko-windows-*.dll
+/libskiko-macos-*.dylib
+/libskiko-linux-*.so
+/skiko-*.dll
+/libskiko-*.dylib
+/libskiko-*.so
 
 # SQLite native libraries
 !/org/sqlite/native/Linux/x86_64
-org/sqlite/native
+/org/sqlite/native
 
 # LWJGL native libraries
 /macos
