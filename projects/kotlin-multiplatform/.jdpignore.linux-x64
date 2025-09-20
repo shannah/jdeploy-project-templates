@@ -1,0 +1,26 @@
+# Common recommended patterns for Linux x64
+# Generated on Sat Sep 20 06:21:14 PDT 2025
+# Keep Linux x64 native libraries
+
+# Skiko (Compose Multiplatform) native libraries
+!/libskiko-linux-x64.so
+skiko-windows-*.dll
+libskiko-macos-*.dylib
+libskiko-linux-*.so
+skiko-*.dll
+libskiko-*.dylib
+libskiko-*.so
+
+# SQLite native libraries
+!/org/sqlite/native/Linux/x86_64
+org/sqlite/native
+
+# LWJGL native libraries
+/macos
+/windows
+/linux
+!/linux/x64
+**gdx*.dll
+**libgdx*.so
+/libgdx*.dylib
+!/libgdx64.so

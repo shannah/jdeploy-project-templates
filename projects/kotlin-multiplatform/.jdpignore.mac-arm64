@@ -1,0 +1,24 @@
+# Common recommended patterns for macOS Silicon
+# Generated on Sat Sep 20 06:21:07 PDT 2025
+# Keep macOS Silicon native libraries
+
+# Skiko (Compose Multiplatform) native libraries
+!/libskiko-macos-arm64.dylib
+skiko-windows-*.dll
+libskiko-macos-*.dylib
+libskiko-linux-*.so
+skiko-*.dll
+libskiko-*.dylib
+libskiko-*.so
+
+# SQLite native libraries
+!/org/sqlite/native/Mac/aarch64
+org/sqlite/native
+
+# LWJGL native libraries
+/linux
+/windows
+/macos/x64
+**gdx*.dll
+**libgdx*.so
+/libgdx64.dylib

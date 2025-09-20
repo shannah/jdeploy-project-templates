@@ -1,0 +1,26 @@
+# Common recommended patterns for Linux ARM
+# Generated on Sat Sep 20 06:21:18 PDT 2025
+# Keep Linux ARM64 native libraries
+
+# Skiko (Compose Multiplatform) native libraries
+!/libskiko-linux-arm64.so
+skiko-windows-*.dll
+libskiko-macos-*.dylib
+libskiko-linux-*.so
+skiko-*.dll
+libskiko-*.dylib
+libskiko-*.so
+
+# SQLite native libraries
+!/org/sqlite/native/Linux/aarch64
+org/sqlite/native
+
+# LWJGL native libraries
+/macos
+/windows
+/linux
+!/linux/arm64
+**gdx*.dll
+**libgdx*.so
+/libgdx*.dylib
+!/libgdxarm64.so

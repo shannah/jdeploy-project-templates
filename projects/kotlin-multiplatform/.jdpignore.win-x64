@@ -1,0 +1,25 @@
+# Common recommended patterns for Windows x64
+# Generated on Sat Sep 20 06:21:11 PDT 2025
+# Keep Windows x64 native libraries
+
+# Skiko (Compose Multiplatform) native libraries
+!/skiko-windows-x64.dll
+skiko-windows-*.dll
+libskiko-macos-*.dylib
+libskiko-linux-*.so
+skiko-*.dll
+libskiko-*.dylib
+libskiko-*.so
+
+# SQLite native libraries
+!/org/sqlite/native/Windows/x86_64
+org/sqlite/native
+
+# LWJGL native libraries
+/linux
+/macos
+/windows/arm64
+/windows/x86
+/gdx.dll
+**libgdx*.so
+**libgdx*.dylib
