@@ -37,7 +37,7 @@ This project is pre-configured with [jDeploy](https://www.jdeploy.com) to automa
 - Automatically builds native installers on every commit and release
 - Creates platform-specific bundles (Windows .exe, macOS .dmg, Linux .deb/.rpm)
 
-See an example release with native installers at: https://github.com/shannah/jdeploy-kmp-starter/releases/tag/v1.0.0
+See an example release with native installers at: https://github.com/shannah/jdeploy-kmp-starter/releases/latest
 
 ---
 
