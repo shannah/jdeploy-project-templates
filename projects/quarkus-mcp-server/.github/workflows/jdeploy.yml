@@ -6,7 +6,7 @@ name: jDeploy CI
 on:
   push:
     branches: ['*-snapshot', '!gh-pages']
-    tags: ['*']
+    tags: ['v*']
 
 jobs:
   build:
