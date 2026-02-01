@@ -205,15 +205,9 @@
             <category>Desktop</category>
             <category>Web</category>
         </categories>
-        <screenshots>
-            <screenshot url="http://example.com/screenshot1.png"/>
-        </screenshots>
-        <screencasts>
-            <screencast url="http://example.com/demo.mp4"/>
-        </screencasts>
-        <tileImageUrl>http://example.com/tile.png</tileImageUrl>
-        <iconUrl>http://example.com/icon.png</iconUrl>
-        <demoDownloadUrl>http://example.com/demo</demoDownloadUrl>
+        <tileImageUrl>https://github.com/user-attachments/assets/cd50454d-786c-494d-a3b6-2e715ba08198</tileImageUrl>
+        <iconUrl>https://github.com/user-attachments/assets/e5113154-6e39-4341-a316-ab3513333a01</iconUrl>
+        <demoDownloadUrl>https://github.com/shannah/jdeploy-service-example/releases</demoDownloadUrl>
         <author>Steve Hannah</author>
         <license>MIT</license>
         <credits>Contributors</credits>
