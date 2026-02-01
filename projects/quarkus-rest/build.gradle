@@ -1,0 +1,49 @@
+plugins {
+    id 'java'
+    id 'io.quarkus'
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
+    implementation 'io.quarkus:quarkus-rest'
+    implementation 'io.quarkus:quarkus-arc'
+    implementation 'ca.weblite:jdeploy-desktop-lib-swing:1.0.2'
+    testImplementation 'io.quarkus:quarkus-junit5'
+    testImplementation 'io.rest-assured:rest-assured'
+}
+
+group = '{{ groupId }}'
+version = '1.0.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_{{ javaVersion }}
+    targetCompatibility = JavaVersion.VERSION_{{ javaVersion }}
+}
+
+test {
+    systemProperty "java.util.logging.manager", "org.jboss.logmanager.LogManager"
+    jvmArgs "--add-opens", "java.base/java.lang=ALL-UNNAMED"
+}
+compileJava {
+    options.encoding = 'UTF-8'
+    options.compilerArgs << '-parameters'
+}
+
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
+tasks.register('buildUberJar') {
+    group = 'build'
+    description = 'Builds an uber-jar with all dependencies included'
+    dependsOn 'clean'
+    doFirst {
+        System.setProperty('quarkus.package.jar.type', 'uber-jar')
+    }
+    finalizedBy 'quarkusBuild'
+}

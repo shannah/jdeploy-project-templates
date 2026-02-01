@@ -196,4 +196,25 @@
         <sourceUrl>https://github.com/shannah/jdeploy-kmp-starter</sourceUrl>
     </template>
 
+    <template>
+        <displayName>Quarkus REST Service</displayName>
+        <name>quarkus-rest</name>
+        <uiToolkit>Quarkus</uiToolkit>
+        <categories>
+            <category>Starter</category>
+            <category>Desktop</category>
+            <category>Web</category>
+        </categories>
+        <tileImageUrl>https://github.com/user-attachments/assets/cd50454d-786c-494d-a3b6-2e715ba08198</tileImageUrl>
+        <iconUrl>https://github.com/user-attachments/assets/e5113154-6e39-4341-a316-ab3513333a01</iconUrl>
+        <demoDownloadUrl>https://github.com/shannah/jdeploy-service-example/releases</demoDownloadUrl>
+        <author>Steve Hannah</author>
+        <license>MIT</license>
+        <credits>Contributors</credits>
+        <description>A Quarkus REST service with dual-mode (REST server + Swing GUI) and jDeploy desktop deployment</description>
+        <buildTool>gradle</buildTool>
+        <programmingLanguage>Java</programmingLanguage>
+        <sourceUrl>https://github.com/shannah/jdeploy-template-quarkus-rest</sourceUrl>
+    </template>
+
 </projectTemplates>
