@@ -226,8 +226,8 @@
             <category>Desktop</category>
             <category>AI</category>
         </categories>
-        <tileImageUrl>https://github.com/user-attachments/assets/cd50454d-786c-494d-a3b6-2e715ba08198</tileImageUrl>
-        <iconUrl>https://github.com/user-attachments/assets/e5113154-6e39-4341-a316-ab3513333a01</iconUrl>
+        <tileImageUrl>https://github.com/user-attachments/assets/11666a72-a2a7-440b-bc5e-57614b938e10</tileImageUrl>
+        <iconUrl>https://github.com/user-attachments/assets/8ce06252-18c4-4ead-b184-781b8a6657c6</iconUrl>
         <author>Steve Hannah</author>
         <license>MIT</license>
         <credits>Contributors</credits>
@@ -235,6 +235,7 @@
         <buildTool>gradle</buildTool>
         <programmingLanguage>Java</programmingLanguage>
         <sourceUrl>https://github.com/shannah/jdeploy-template-quarkus-mcp-server</sourceUrl>
+        <demoDownloadUrl>https://github.com/shannah/jdeploy-mcp-example/releases</demoDownloadUrl>
     </template>
 
 </projectTemplates>
