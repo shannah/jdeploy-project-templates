@@ -1,0 +1,39 @@
+# This workflow will build a Quarkus project with Gradle and bundle them as native app installers with jDeploy
+# See https://www.jdeploy.com for more information.
+
+name: jDeploy CI
+
+on:
+  push:
+    branches: ['*-snapshot', '!gh-pages']
+    tags: ['*']
+
+jobs:
+  build:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '{{ javaVersion }}'
+          distribution: 'temurin'
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+      - name: Build with Gradle
+        uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
+        with:
+          arguments: buildUberJar
+      - name: Build App Installer Bundles
+        uses: shannah/jdeploy@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload Build Artifacts for DMG Action
+        if: ${{ vars.JDEPLOY_CREATE_DMG == 'true' }}  # Only needed if creating DMG
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-target
+          path: ./build

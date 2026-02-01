@@ -217,4 +217,25 @@
         <sourceUrl>https://github.com/shannah/jdeploy-template-quarkus-rest</sourceUrl>
     </template>
 
+    <template>
+        <displayName>Quarkus MCP Server</displayName>
+        <name>quarkus-mcp-server</name>
+        <uiToolkit>Quarkus</uiToolkit>
+        <categories>
+            <category>Starter</category>
+            <category>Desktop</category>
+            <category>AI</category>
+        </categories>
+        <tileImageUrl>https://github.com/user-attachments/assets/11666a72-a2a7-440b-bc5e-57614b938e10</tileImageUrl>
+        <iconUrl>https://github.com/user-attachments/assets/8ce06252-18c4-4ead-b184-781b8a6657c6</iconUrl>
+        <author>Steve Hannah</author>
+        <license>MIT</license>
+        <credits>Contributors</credits>
+        <description>A Quarkus MCP (Model Context Protocol) server with jDeploy desktop deployment for AI tool integration</description>
+        <buildTool>gradle</buildTool>
+        <programmingLanguage>Java</programmingLanguage>
+        <sourceUrl>https://github.com/shannah/jdeploy-template-quarkus-mcp-server</sourceUrl>
+        <demoDownloadUrl>https://github.com/shannah/jdeploy-mcp-example/releases</demoDownloadUrl>
+    </template>
+
 </projectTemplates>
