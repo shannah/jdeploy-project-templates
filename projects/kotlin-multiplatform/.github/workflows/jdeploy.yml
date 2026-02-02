@@ -8,6 +8,10 @@ on:
     branches: ['*-snapshot', '!gh-pages']
     tags: ['v*']
 
+concurrency:
+  group: jdeploy-release-${{ github.repository }}
+  cancel-in-progress: false
+
 jobs:
   build:
     permissions:
