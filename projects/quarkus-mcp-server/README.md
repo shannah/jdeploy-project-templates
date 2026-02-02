@@ -31,7 +31,7 @@ Build and run:
 
 ```bash
 ./gradlew buildUberJar
-java -jar build/{{ artifactId }}-1.0.0-SNAPSHOT-runner.jar
+java -Djdeploy.mode=command -jar build/{{ artifactId }}-1.0.0-SNAPSHOT-runner.jar
 ```
 
 ### GUI Mode
@@ -39,7 +39,7 @@ java -jar build/{{ artifactId }}-1.0.0-SNAPSHOT-runner.jar
 Run in desktop GUI mode:
 
 ```bash
-java -Dapp.mode=gui -jar build/{{ artifactId }}-1.0.0-SNAPSHOT-runner.jar
+java -jar build/{{ artifactId }}-1.0.0-SNAPSHOT-runner.jar
 ```
 
 ## MCP Tools

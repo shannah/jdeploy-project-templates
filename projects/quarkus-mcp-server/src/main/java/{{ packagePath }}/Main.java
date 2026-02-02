@@ -10,10 +10,10 @@ import java.awt.*;
 public class Main {
 
     public static final String MODE_GUI = "gui";
-    public static final String PROP_MODE = "app.mode";
+    public static final String PROP_MODE = "jdeploy.mode";
 
     public static void main(String... args) {
-        String mode = System.getProperty(PROP_MODE);
+        String mode = System.getProperty(PROP_MODE, MODE_GUI);
 
         if (MODE_GUI.equalsIgnoreCase(mode)) {
             launchSwingApp(args);

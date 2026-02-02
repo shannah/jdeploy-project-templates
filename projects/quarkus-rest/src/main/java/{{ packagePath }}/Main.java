@@ -21,7 +21,7 @@ public class Main {
 
     public static void main(String... args) {
         // Check for Swing mode system property
-        String mode = System.getProperty(PROP_MODE);
+        String mode = System.getProperty(PROP_MODE, MODE_GUI);
 
         if (MODE_GUI.equalsIgnoreCase(mode)) {
             // Launch Swing application
