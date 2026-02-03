@@ -238,4 +238,20 @@
         <demoDownloadUrl>https://github.com/shannah/jdeploy-mcp-example/releases</demoDownloadUrl>
     </template>
 
+    <template>
+        <displayName>Picocli CLI Maven Starter</displayName>
+        <name>picocli</name>
+        <uiToolkit>Picocli</uiToolkit>
+        <categories>
+            <category>Starter</category>
+            <category>CLI</category>
+        </categories>
+        <author>Steve Hannah</author>
+        <license>MIT</license>
+        <credits>Contributors</credits>
+        <description>A bare-bones picocli CLI application using Maven</description>
+        <buildTool>maven</buildTool>
+        <programmingLanguage>Java</programmingLanguage>
+    </template>
+
 </projectTemplates>
