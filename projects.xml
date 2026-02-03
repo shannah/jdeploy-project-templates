@@ -239,6 +239,23 @@
     </template>
 
     <template>
+        <displayName>Spring Boot REST Service</displayName>
+        <name>spring-boot-rest</name>
+        <uiToolkit>Spring Boot</uiToolkit>
+        <categories>
+            <category>Starter</category>
+            <category>Desktop</category>
+            <category>Web</category>
+        </categories>
+        <author>Steve Hannah</author>
+        <license>MIT</license>
+        <credits>Contributors</credits>
+        <description>A Spring Boot REST service with jDeploy desktop deployment and service management</description>
+        <buildTool>maven</buildTool>
+        <programmingLanguage>Java</programmingLanguage>
+    </template>
+
+    <template>
         <displayName>Picocli CLI Maven Starter</displayName>
         <name>picocli</name>
         <uiToolkit>Picocli</uiToolkit>
