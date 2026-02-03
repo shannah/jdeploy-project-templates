@@ -199,7 +199,7 @@
     <template>
         <displayName>Quarkus REST Service</displayName>
         <name>quarkus-rest</name>
-        <uiToolkit>Quarkus</uiToolkit>
+        <uiToolkit>Swing</uiToolkit>
         <categories>
             <category>Starter</category>
             <category>Desktop</category>
@@ -220,7 +220,7 @@
     <template>
         <displayName>Quarkus MCP Server</displayName>
         <name>quarkus-mcp-server</name>
-        <uiToolkit>Quarkus</uiToolkit>
+        <uiToolkit>Swing</uiToolkit>
         <categories>
             <category>Starter</category>
             <category>Desktop</category>
@@ -241,7 +241,7 @@
     <template>
         <displayName>Spring Boot REST Service</displayName>
         <name>spring-boot-rest</name>
-        <uiToolkit>Spring Boot</uiToolkit>
+        <uiToolkit>Swing</uiToolkit>
         <categories>
             <category>Starter</category>
             <category>Desktop</category>
@@ -261,7 +261,7 @@
     <template>
         <displayName>Picocli CLI Maven Starter</displayName>
         <name>picocli</name>
-        <uiToolkit>Picocli</uiToolkit>
+        <uiToolkit>Swing</uiToolkit>
         <categories>
             <category>Starter</category>
             <category>CLI</category>
