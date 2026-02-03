@@ -255,6 +255,7 @@
         <description>A Spring Boot REST service with jDeploy desktop deployment and service management</description>
         <buildTool>maven</buildTool>
         <programmingLanguage>Java</programmingLanguage>
+        <demoDownloadUrl>https://github.com/shannah/spring-rest-app/releases/tag/v1.0.0</demoDownloadUrl>
     </template>
 
     <template>
