@@ -1,0 +1,47 @@
+{
+  "bin": {
+    "{{ appName }}": "jdeploy-bundle/jdeploy.js"
+  },
+  "author": "",
+  "description": "A Spring Boot MCP server deployed using jDeploy",
+  "main": "index.js",
+  "preferGlobal": true,
+  "repository": "",
+  "version": "1.0.0",
+  "jdeploy": {
+    "jdk": false,
+    "javaVersion": "{{ javaVersion }}",
+    "jar": "target/{{ artifactId }}-1.0-SNAPSHOT.jar",
+    "javafx": false,
+    "title": "{{ appTitle }}",
+    "buildCommand": [
+      "./mvnw",
+      "package"
+    ],
+    "commands": {
+      "{{ appName }}": {
+        "description": "{{ appTitle }} MCP server"
+      }
+    },
+    "ai": {
+      "mcp": {
+        "command": "{{ appName }}"
+      }
+    }
+  },
+  "dependencies": {
+    "command-exists-promise": "^2.0.2",
+    "node-fetch": "2.6.7",
+    "shelljs": "^0.8.4",
+    "tar": "^4.4.8",
+    "yauzl": "^2.10.0"
+  },
+  "license": "ISC",
+  "name": "{{ appName }}",
+  "files": [
+    "jdeploy-bundle"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
