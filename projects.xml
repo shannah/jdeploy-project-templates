@@ -259,6 +259,23 @@
     </template>
 
     <template>
+        <displayName>Spring Boot MCP Server</displayName>
+        <name>spring-boot-mcp-server</name>
+        <uiToolkit>Swing</uiToolkit>
+        <categories>
+            <category>Starter</category>
+            <category>Desktop</category>
+            <category>AI</category>
+        </categories>
+        <author>Steve Hannah</author>
+        <license>MIT</license>
+        <credits>Contributors</credits>
+        <description>A Spring Boot MCP (Model Context Protocol) server with jDeploy desktop deployment for AI tool integration</description>
+        <buildTool>maven</buildTool>
+        <programmingLanguage>Java</programmingLanguage>
+    </template>
+
+    <template>
         <displayName>Picocli CLI Maven Starter</displayName>
         <name>picocli</name>
         <uiToolkit>Swing</uiToolkit>
