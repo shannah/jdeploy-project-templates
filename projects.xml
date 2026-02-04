@@ -267,12 +267,15 @@
             <category>Desktop</category>
             <category>AI</category>
         </categories>
+        <iconUrl>https://github.com/user-attachments/assets/42168657-ce13-48f5-a9f2-2fa6a9827685</iconUrl>
+        <tileImageUrl>https://github.com/user-attachments/assets/4db85b5a-5edc-464c-b3ee-0d8568129728</tileImageUrl>
         <author>Steve Hannah</author>
         <license>MIT</license>
         <credits>Contributors</credits>
         <description>A Spring Boot MCP (Model Context Protocol) server with jDeploy desktop deployment for AI tool integration</description>
         <buildTool>maven</buildTool>
         <programmingLanguage>Java</programmingLanguage>
+        <demoDownloadUrl>https://github.com/shannah/spring-mcp-server</demoDownloadUrl>
     </template>
 
     <template>
