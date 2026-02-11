@@ -30,7 +30,7 @@ public class {{ mainClass }} implements Callable<Integer> {
     }
 
     public static void main(String[] args) {
-        String mode = System.getProperty("jdeploy.mode", "gui");
+        String mode = System.getProperty("jdeploy.mode", "command");
 
         if ("gui".equals(mode)) {
             javax.swing.SwingUtilities.invokeLater(() -> {
