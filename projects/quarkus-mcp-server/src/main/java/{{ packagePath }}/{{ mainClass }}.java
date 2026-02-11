@@ -7,13 +7,14 @@ import javax.swing.*;
 import java.awt.*;
 
 @QuarkusMain
-public class Main {
+public class {{ mainClass }} {
 
     public static final String MODE_GUI = "gui";
+    public static final String MODE_COMMAND = "command";
     public static final String PROP_MODE = "jdeploy.mode";
 
     public static void main(String... args) {
-        String mode = System.getProperty(PROP_MODE, MODE_GUI);
+        String mode = System.getProperty(PROP_MODE, MODE_COMMAND);
 
         if (MODE_GUI.equalsIgnoreCase(mode)) {
             launchSwingApp(args);
