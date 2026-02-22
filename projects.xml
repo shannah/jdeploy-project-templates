@@ -279,6 +279,25 @@
     </template>
 
     <template>
+        <displayName>Quarkus JavaFX MCP Server</displayName>
+        <name>quarkus-javafx-mcp</name>
+        <uiToolkit>JavaFX</uiToolkit>
+        <categories>
+            <category>Starter</category>
+            <category>Desktop</category>
+            <category>AI</category>
+        </categories>
+        <tileImageUrl>https://github.com/user-attachments/assets/11666a72-a2a7-440b-bc5e-57614b938e10</tileImageUrl>
+        <iconUrl>https://github.com/user-attachments/assets/8ce06252-18c4-4ead-b184-781b8a6657c6</iconUrl>
+        <author>Steve Hannah</author>
+        <license>MIT</license>
+        <credits>Contributors</credits>
+        <description>A JavaFX application with MCP (Model Context Protocol) server integration for AI-scriptable desktop apps</description>
+        <buildTool>gradle</buildTool>
+        <programmingLanguage>Java</programmingLanguage>
+    </template>
+
+    <template>
         <displayName>Picocli CLI Maven Starter</displayName>
         <name>picocli</name>
         <uiToolkit>Swing</uiToolkit>

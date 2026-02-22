@@ -1,0 +1,35 @@
+{
+    "license": "ISC",
+    "bin": {"{{ appName }}": "jdeploy-bundle/jdeploy.js"},
+    "name": "{{ appName }}",
+    "description": "A JavaFX application with MCP server integration, deployed using jDeploy",
+    "files": ["jdeploy-bundle"],
+    "main": "index.js",
+    "preferGlobal": true,
+    "scripts": {"test": "echo \"Error: no test specified\" && exit 1"},
+    "version": "1.0.0",
+    "jdeploy": {
+        "singleton": true,
+        "fallbackToUniversal": false,
+        "generateLegacyBundles": false,
+        "publishTargets": [],
+        "javaVersion": "{{ javaVersion }}",
+        "jar": "build/{{ artifactId }}-1.0.0-SNAPSHOT-runner.jar",
+        "title": "{{ appTitle }}",
+        "downloadPage": {"platforms": ["default"]},
+        "platformBundlesEnabled": false,
+        "javafx": true,
+        "urlSchemes": ["{{ appName }}"],
+        "ai": {"mcp": {"command": "{{ appName }}"}},
+        "commands": {"{{ appName }}": {
+            "description": "{{ appTitle }} MCP server"
+        }}
+    },
+    "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+    }
+}

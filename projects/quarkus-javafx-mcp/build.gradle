@@ -1,0 +1,58 @@
+plugins {
+    id 'java'
+    id 'io.quarkus'
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
+    implementation enforcedPlatform("${quarkusPlatformGroupId}:quarkus-mcp-server-bom:${quarkusPlatformVersion}")
+    implementation 'io.quarkiverse.mcp:quarkus-mcp-server-stdio'
+    implementation 'io.quarkus:quarkus-rest-client-jackson'
+    implementation 'io.quarkus:quarkus-qute'
+    implementation 'io.quarkus:quarkus-arc'
+    testImplementation 'io.quarkus:quarkus-junit5'
+    // JavaFX
+    implementation 'org.openjfx:javafx-controls:21'
+
+    // jDeploy Desktop Lib - use BOM for version management
+    implementation platform('ca.weblite:jdeploy-desktop-lib-bom:1.0.0-SNAPSHOT')
+    implementation 'ca.weblite:jdeploy-desktop-lib-javafx'
+    implementation 'ca.weblite:jdeploy-desktop-lib-hive-filewatcher'
+    implementation 'ca.weblite:jdeploy-desktop-lib-bridge'
+}
+
+group = '{{ groupId }}'
+version = '1.0.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_{{ javaVersion }}
+    targetCompatibility = JavaVersion.VERSION_{{ javaVersion }}
+}
+
+test {
+    systemProperty "java.util.logging.manager", "org.jboss.logmanager.LogManager"
+    jvmArgs "--add-opens", "java.base/java.lang=ALL-UNNAMED"
+}
+compileJava {
+    options.encoding = 'UTF-8'
+    options.compilerArgs << '-parameters'
+}
+
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
+tasks.register('buildUberJar') {
+    group = 'build'
+    description = 'Builds an uber-jar with all dependencies included'
+    dependsOn 'clean'
+    doFirst {
+        System.setProperty('quarkus.package.jar.type', 'uber-jar')
+    }
+    finalizedBy 'quarkusBuild'
+}
