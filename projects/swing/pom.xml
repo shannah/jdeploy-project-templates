@@ -13,8 +13,6 @@
     <java.version>{{ javaVersion }}</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
-    <jdeploy.maven.plugin.version>1.0.8</jdeploy.maven.plugin.version>
-    <jdeploy.version>4.0.26</jdeploy.version>
   </properties>
   <dependencies>
     <dependency>
@@ -58,21 +56,6 @@
                 ${project.build.directory}/libs
               </outputDirectory>
             </configuration>
-          </execution>
-        </executions>
-      </plugin>
-
-      <plugin>
-        <groupId>ca.weblite</groupId>
-        <artifactId>jdeploy-maven-plugin</artifactId>
-        <version>${jdeploy.maven.plugin.version}</version>
-        <executions>
-          <execution>
-            <id>jdeploy</id>
-            <phase>package</phase>
-            <goals>
-              <goal>sync-package-json</goal>
-            </goals>
           </execution>
         </executions>
       </plugin>
